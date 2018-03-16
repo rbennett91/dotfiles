@@ -87,7 +87,7 @@ let g:syntastic_check_on_wq = 0
 " -----------------------------------------------------------------------------
 "                               AIRLINE SETTINGS
 " -----------------------------------------------------------------------------
-let g:airline_theme = 'murmur'
+let g:airline_theme = 'gruvbox'
 " must have powerline font installed (https://github.com/powerline/fonts)
 let g:airline_powerline_fonts = 1
 
