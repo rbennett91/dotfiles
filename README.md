@@ -9,7 +9,7 @@ Examples:
 * ```ln -s /home/ryan/dotfiles/.tmux.conf /home/ryan/.tmux.conf```
 * ```ln -s /home/ryan/dotfiles/.vimrc /home/ryan/.vimrc```
 * ```ln -s /home/ryan/dotfiles/.vim /home/ryan/.vim```
-* ```ln -s /home/ryan/dotfiles/.config/fish/functions/ /home/ryan/.config/fish/functions```
+* ```ln -s /home/ryan/dotfiles/.config/fish/functions /home/ryan/.config/fish/functions```
 
 You'll need to specify the full path of the source and destination of each symbolic link.
 
