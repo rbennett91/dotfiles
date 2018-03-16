@@ -1,7 +1,6 @@
 ### Installation
 Clone this repository and it's submodules:
-
-```git clone --recursive https://github.com/rbennett91/dotfiles.git```
+* ```git clone --recursive https://github.com/rbennett91/dotfiles.git```
 
 Create symlinks from this repository to your home directory:
 * `./create_symlinks.sh`
