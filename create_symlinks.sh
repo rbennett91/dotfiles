@@ -9,6 +9,7 @@ dotfiles=(
     '.vimrc'
     '.vim'
     '.config/fish/functions'
+    '.gitconfig'
 )
 
 # if you ever do this by hand, note that 'ln -s' needs a full path (not relative).
