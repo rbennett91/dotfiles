@@ -98,5 +98,6 @@ let g:airline_powerline_fonts = 1
 :map ,b :! clear; git blame % <cr>
 :map ,cp :normal i#  <ESC>
 :map ,cj :normal i// <ESC>
+:map ,cs :normal i-- <ESC>
 vnoremap < <gv
 vnoremap > >gv
