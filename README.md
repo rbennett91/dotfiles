@@ -13,4 +13,8 @@ This repository uses git submodules for vim plugins. To add a new plugin:
 * Commit and push the change back to this repository.
 
 ## Updating vim plugins:
-
+* `cd .vim/bundle/`
+* `cd` into top level directory of plugin
+* `git checkout master; git pull origin master`
+* repeat for each submodule
+* Commit and push the change back to this repository.
