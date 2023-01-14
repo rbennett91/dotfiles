@@ -92,7 +92,7 @@ let g:airline_theme = 'gruvbox'
 " -----------------------------------------------------------------------------
 "                                BLACK SETTINGS
 " -----------------------------------------------------------------------------
-autocmd BufWritePre *.py execute ':Black'
+" autocmd BufWritePre *.py execute ':Black'
 
 " -----------------------------------------------------------------------------
 "                              CUSTOM KEYMAPPINGS
