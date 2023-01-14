@@ -34,11 +34,6 @@ set cursorline                         " highlight current line
 " underline current line
 hi CursorLine cterm=UNDERLINE gui=UNDERLINE
 
-" set gui font
-if has('gui_running')
-  set guifont=Roboto\ Mono\ for\ Powerline:h11
-endif
-
 " -----------------------------------------------------------------------------
 "                                  STATUS BAR
 " -----------------------------------------------------------------------------
@@ -90,9 +85,18 @@ let g:syntastic_check_on_wq = 0
 let g:airline_theme = 'gruvbox'
 
 " -----------------------------------------------------------------------------
-"                                BLACK SETTINGS
+"                           PYTHON BLACK AUTOFORMAT
 " -----------------------------------------------------------------------------
-" autocmd BufWritePre *.py execute ':Black'
+" auto format python files with Black if available
+function! BlackFormatPyFile()
+    if !executable('black')
+        echo 'python black not found. skipping python file formatting'
+    else
+        execute '! black %'
+    endif
+endfunction
+
+autocmd BufWritePost *.py :call BlackFormatPyFile()
 
 " -----------------------------------------------------------------------------
 "                              CUSTOM KEYMAPPINGS
