@@ -7,64 +7,65 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "agent": {
-    "default_profile": "ask",
-    "model_parameters": [],
-    "default_model": {
-      "provider": "anthropic",
-      "model": "claude-3-7-sonnet-latest"
+    "agent": {
+        "default_profile": "ask",
+        "model_parameters": [],
+        "default_model": {
+            "provider": "anthropic",
+            "model": "claude-3-7-sonnet-latest"
+        },
+        "version": "2"
     },
-    "version": "2"
-  },
-  "telemetry": {
-    "metrics": false,
-    "diagnostics": false
-  },
-  "vim_mode": true,
-  "ui_font_size": 13,
-  "buffer_font_size": 12,
-  "cursor_blink": false,
-  "use_autoclose": false,
-  "theme": {
-    "mode": "system",
-    "light": "Gruvbox Light",
-    "dark": "Gruvbox Dark"
-  },
-  "file_scan_exclusions": [
-    "**/.git",
-    "**/.svn",
-    "**/.hg",
-    "**/.jj",
-    "**/CVS",
-    "**/.DS_Store",
-    "**/Thumbs.db",
-    "**/.classpath",
-    "**/.settings",
-    "**/venv"
-  ],
-  "terminal": {
-    "detect_venv": "off"
-  },
-  "languages": {
-    "Python": {
-      "language_servers": ["ruff"],
-      "format_on_save": "on",
-      "formatter": [
-        {
-          "code_actions": {
-            "source.organizeImports.ruff": true,
-            "source.fixAll.ruff": true
-          }
+    "telemetry": {
+        "metrics": false,
+        "diagnostics": false
+    },
+    "vim_mode": true,
+    "ui_font_size": 13,
+    "buffer_font_size": 12,
+    "cursor_blink": false,
+    "use_autoclose": false,
+    "tab_size": 4,
+    "theme": {
+        "mode": "system",
+        "light": "Gruvbox Light",
+        "dark": "Gruvbox Dark"
+    },
+    "file_scan_exclusions": [
+        "**/.git",
+        "**/.svn",
+        "**/.hg",
+        "**/.jj",
+        "**/CVS",
+        "**/.DS_Store",
+        "**/Thumbs.db",
+        "**/.classpath",
+        "**/.settings",
+        "**/venv"
+    ],
+    "terminal": {
+        "detect_venv": "off"
+    },
+    "languages": {
+        "Python": {
+            "language_servers": ["ruff"],
+            "format_on_save": "on",
+            "formatter": [
+                {
+                    "code_actions": {
+                        "source.organizeImports.ruff": true,
+                        "source.fixAll.ruff": true
+                    }
+                }
+            ]
+        },
+        "HTML": {
+            "format_on_save": "off"
         }
-      ]
     },
-    "HTML": {
-      "format_on_save": "off"
+    "git": {
+        "inline_blame": {
+            "enabled": false
+        }
     }
-  },
-  "git": {
-    "inline_blame": {
-      "enabled": false
-    }
-  }
 }
