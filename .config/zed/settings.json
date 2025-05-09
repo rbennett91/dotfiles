@@ -24,8 +24,12 @@
   "ui_font_size": 13,
   "buffer_font_size": 12,
   "cursor_blink": false,
-  "ensure_final_newline_on_save": false,
   "use_autoclose": false,
+  "theme": {
+    "mode": "system",
+    "light": "Gruvbox Light",
+    "dark": "Gruvbox Dark"
+  },
   "file_scan_exclusions": [
     "**/.git",
     "**/.svn",
@@ -38,11 +42,6 @@
     "**/.settings",
     "**/venv"
   ],
-  "theme": {
-    "mode": "system",
-    "light": "Gruvbox Light",
-    "dark": "Gruvbox Dark"
-  },
   "terminal": {
     "detect_venv": "off"
   },
@@ -61,6 +60,11 @@
     },
     "HTML": {
       "format_on_save": "off"
+    }
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
     }
   }
 }
