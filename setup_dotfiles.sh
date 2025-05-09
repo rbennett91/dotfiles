@@ -9,6 +9,7 @@ symlink_dotfiles=(
     '.vimrc'
     '.vim'
     '.config/fish/functions'
+    '.config/zed/settings.json'
 )
 
 # copy_dotfiles might change between systems and require manual configuration
