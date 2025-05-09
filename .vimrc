@@ -88,15 +88,16 @@ let g:airline_theme = 'gruvbox'
 "                           PYTHON BLACK AUTOFORMAT
 " -----------------------------------------------------------------------------
 " auto format python files with Black if available
-function! BlackFormatPyFile()
-    if !executable('black')
-        echo 'python black not found. skipping python file formatting'
+function! RuffFormatPyFile()
+    if !executable('ruff')
+        echo 'python ruff not found. skipping python file formatting'
     else
-        execute '! black %'
+        execute '! ruff check --select I --fix %'
+        execute '! ruff format %'
     endif
 endfunction
 
-autocmd BufWritePost *.py :call BlackFormatPyFile()
+autocmd BufWritePost *.py :call RuffFormatPyFile()
 
 " -----------------------------------------------------------------------------
 "                              CUSTOM KEYMAPPINGS
