@@ -41,10 +41,16 @@
         "**/Thumbs.db",
         "**/.classpath",
         "**/.settings",
-        "**/venv"
+        "**/venv",
+        "**.venv"
     ],
     "terminal": {
-        "detect_venv": "off"
+        "detect_venv": {
+            "on": {
+                "directories": [".env", "env", ".venv", "venv"],
+                "activate_script": "fish"
+            }
+        }
     },
     "languages": {
         "Python": {
