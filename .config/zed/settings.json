@@ -12,9 +12,8 @@
         "model_parameters": [],
         "default_model": {
             "provider": "anthropic",
-            "model": "claude-3-7-sonnet-latest"
-        },
-        "version": "2"
+            "model": "claude-sonnet-4-latest"
+        }
     },
     "telemetry": {
         "metrics": false,
@@ -30,6 +29,9 @@
         "mode": "system",
         "light": "Gruvbox Light",
         "dark": "Gruvbox Dark"
+    },
+    "buffer_font_features": {
+        "calt": false
     },
     "file_scan_exclusions": [
         "**/.git",
